@@ -30,7 +30,7 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 max-w-[1080px] mx-auto px-7 flex flex-col items-center text-center">
-        <h1 className="font-serif font-normal leading-[1.08] tracking-tight text-[clamp(2.4rem,calc(5.2vw*var(--font-scale)),4rem)] max-w-[820px]">
+        <h1 tabIndex={0} className="font-serif font-normal leading-[1.08] tracking-tight text-[clamp(2.4rem,calc(5.2vw*var(--font-scale)),4rem)] max-w-[820px]">
           Toda pessoa merece um espaço seguro para cuidar da própria{" "}
           <em className="italic font-medium text-sage dark:text-clay">
             saúde mental
@@ -38,7 +38,7 @@ export default function Hero() {
           .
         </h1>
 
-        <p className="mt-8 mb-4 max-w-[560px] text-[1.15rem] font-light text-[#5a5847] dark:text-[#c8c5b5]">
+        <p tabIndex={0} className="mt-8 mb-4 max-w-[560px] text-[1.15rem] font-light text-[#5a5847] dark:text-[#c8c5b5]">
           O projeto{" "}
           <em className="italic font-semibold text-sage-deep dark:text-clay">
             Terapia para Todos

@@ -36,13 +36,13 @@ export default function Psicologa() {
           <div className="text-[1.25rem] uppercase tracking-wider text-clay font-medium mb-3">
             Quem está do outro lado
           </div>
-          <h2 className="font-serif font-normal text-[clamp(1.7rem,calc(3.2vw*var(--font-scale)),2.5rem)] leading-tight tracking-tight">
+          <h2 tabIndex={0} className="font-serif font-normal text-[clamp(1.7rem,calc(3.2vw*var(--font-scale)),2.5rem)] leading-tight tracking-tight">
             Uma trajetória que começou <em className="italic font-medium text-sage-deep dark:text-clay">com escuta.</em>
           </h2>
-          <p className="font-serif italic text-[1.4rem] leading-snug text-sage-deep dark:text-clay my-6">
+          <p tabIndex={0} className="font-serif italic text-[1.4rem] leading-snug text-sage-deep dark:text-clay my-6">
             &ldquo;O que mais me gratifica é ver alguém ressignificar sua própria história.&rdquo;
           </p>
-          <p className="text-[1rem] text-[#4a4838] dark:text-[#c8c5b5]">
+          <p tabIndex={0} className="text-[1rem] text-[#4a4838] dark:text-[#c8c5b5]">
             Luziane chegou à Psicologia depois de uma vida inteira observando o comportamento
             humano com curiosidade genuína. O interesse sempre esteve ali — na atenção aos
             detalhes, na escuta atenta — até que ela decidiu torná-lo profissão. Hoje, o que

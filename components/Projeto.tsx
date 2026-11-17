@@ -58,7 +58,7 @@ export default function Projeto() {
             O Projeto
           </div>
 
-          <h2 className="font-serif font-normal text-[clamp(1.7rem,calc(3.2vw*var(--font-scale)),2.5rem)] leading-tight tracking-tight mx-auto">
+          <h2 tabIndex={0} className="font-serif font-normal text-[clamp(1.7rem,calc(3.2vw*var(--font-scale)),2.5rem)] leading-tight tracking-tight mx-auto">
             Nasceu de uma escuta{" "}
             <em className="italic font-medium text-sage-deep dark:text-clay">
               que não podia parar.
@@ -68,7 +68,7 @@ export default function Projeto() {
 
         {/* História */}
         <div className="mx-auto mt-14 space-y-6 text-center">
-          <p className="text-[1.02rem] leading-8 text-[#4a4838] dark:text-[#c8c5b5]">
+          <p tabIndex={0} className="text-[1.02rem] leading-8 text-[#4a4838] dark:text-[#c8c5b5]">
             Após a pandemia e a enchente que atingiu Petrópolis em 2022,
             muitas pessoas passaram a olhar para a própria saúde mental
             como nunca antes. Durante esse período, o atendimento
@@ -78,7 +78,7 @@ export default function Projeto() {
             alternativas para dar continuidade ao tratamento.
           </p>
 
-          <p className="text-[1.02rem] leading-8 text-[#4a4838] dark:text-[#c8c5b5]">
+          <p tabIndex={0} className="text-[1.02rem] leading-8 text-[#4a4838] dark:text-[#c8c5b5]">
             Foi dessa realidade que nasceu o{" "}
             <strong>Terapia para Todos</strong>: um projeto criado para
             ampliar o acesso à psicoterapia e garantir que ninguém
@@ -94,14 +94,14 @@ export default function Projeto() {
               Nossa missão
             </span>
 
-            <p className="font-serif italic text-[1.35rem] text-sage-deep dark:text-clay leading-relaxed">
+            <p tabIndex={0} className="font-serif italic text-[1.35rem] text-sage-deep dark:text-clay leading-relaxed">
               &ldquo;Facilitar o acesso à psicoterapia com acolhimento,
               ética e humanidade — porque cuidar da mente também deve
               ser um direito.&rdquo;
             </p>
 
             <div className="mt-8 pt-6 border-t border-line dark:border-dark-line">
-              <p className="text-[#4a4838] dark:text-[#c8c5b5] leading-7">
+              <p tabIndex={0} className="text-[#4a4838] dark:text-[#c8c5b5] leading-7">
                 Hoje o projeto segue atendendo quem mais precisa, com
                 o objetivo de expandir ainda mais o acesso — inclusive
                 a públicos que ainda encontram poucas portas abertas
@@ -132,11 +132,11 @@ export default function Projeto() {
                   />
                 </div>
 
-                <h3 className="font-serif text-xl font-medium mb-3">
+                <h3 tabIndex={0} className="font-serif text-xl font-medium mb-3">
                   {v.title}
                 </h3>
 
-                <p className="text-[#5a5847] dark:text-[#b5b19f] leading-7">
+                <p tabIndex={0} className="text-[#5a5847] dark:text-[#b5b19f] leading-7">
                   {v.desc}
                 </p>
               </div>

@@ -12,13 +12,13 @@ export default function CtaFinal() {
     <section id="agendar" className="py-22">
       <div className="max-w-[1080px] mx-auto px-4 sm:px-7">
         <div className="bg-ink dark:bg-dark-surface text-cream rounded-[28px] px-4 sm:px-10 py-12 text-center">
-          <h2 className="font-serif font-normal text-[clamp(1.7rem,calc(3.2vw*var(--font-scale)),2.5rem)] leading-tight max-w-[600px] mx-auto">
+          <h2 tabIndex={0} className="font-serif font-normal text-[clamp(1.7rem,calc(3.2vw*var(--font-scale)),2.5rem)] leading-tight max-w-[600px] mx-auto">
             Dar o primeiro passo pode ser mais{" "}
             <em className="italic font-medium text-clay">simples</em> do
             que você imagina.
           </h2>
 
-          <p className="text-[#c8c5b5] max-w-[480px] mx-auto my-5 font-light">
+          <p tabIndex={0} className="text-[#c8c5b5] max-w-[480px] mx-auto my-5 font-light">
             Se você sente que precisa de um espaço de escuta, estamos
             aqui para conversar — sem pressa e sem julgamento.
           </p>

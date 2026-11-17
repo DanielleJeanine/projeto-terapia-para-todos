@@ -11,7 +11,7 @@ export default function ComoFunciona() {
     <section id="como" tabIndex={-1} className="bg-cream-deep dark:bg-dark-surface py-22">
       <div className="max-w-[1080px] mx-auto px-7 py-16">
         <div className="text-[0.8rem] uppercase tracking-wider text-clay font-medium mb-3">Como funciona</div>
-        <h2 className="font-serif font-normal text-[clamp(1.7rem,calc(3.2vw*var(--font-scale)),2.5rem)] leading-tight tracking-tight max-w-[640px]">
+        <h2 tabIndex={0} className="font-serif font-normal text-[clamp(1.7rem,calc(3.2vw*var(--font-scale)),2.5rem)] leading-tight tracking-tight max-w-[640px]">
           Um caminho <em className="italic font-medium text-sage-deep dark:text-clay">leve</em> até o cuidado.
         </h2>
 
@@ -24,8 +24,8 @@ export default function ComoFunciona() {
             >
               <div className="font-serif italic text-[1.4rem] text-clay">{p.num}</div>
               <div>
-                <h3 className="font-serif font-medium text-[1.15rem] mb-1.5">{p.title}</h3>
-                <p className="text-[0.95rem] max-w-[520px] text-[#5a5847] dark:text-[#b5b19f]">{p.desc}</p>
+                <h3 tabIndex={0} className="font-serif font-medium text-[1.15rem] mb-1.5">{p.title}</h3>
+                <p tabIndex={0} className="text-[0.95rem] max-w-[520px] text-[#5a5847] dark:text-[#b5b19f]">{p.desc}</p>
               </div>
             </div>
           ))}
