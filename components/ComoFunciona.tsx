@@ -8,10 +8,10 @@ const passos = [
 
 export default function ComoFunciona() {
   return (
-    <section id="como" className="bg-cream-deep dark:bg-dark-surface py-22">
+    <section id="como" tabIndex={-1} className="bg-cream-deep dark:bg-dark-surface py-22">
       <div className="max-w-[1080px] mx-auto px-7 py-16">
         <div className="text-[0.8rem] uppercase tracking-wider text-clay font-medium mb-3">Como funciona</div>
-        <h2 className="font-serif font-normal text-[clamp(1.7rem,3.2vw,2.5rem)] leading-tight tracking-tight max-w-[640px]">
+        <h2 className="font-serif font-normal text-[clamp(1.7rem,calc(3.2vw*var(--font-scale)),2.5rem)] leading-tight tracking-tight max-w-[640px]">
           Um caminho <em className="italic font-medium text-sage-deep dark:text-clay">leve</em> até o cuidado.
         </h2>
 

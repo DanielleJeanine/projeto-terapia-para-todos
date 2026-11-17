@@ -10,7 +10,7 @@ const valores = [
   {
     icon: Ear,
     title: "Atendimento acolhedor",
-    desc: "Escuta sem pressa, sem julgamento, com respeito à sua história.",
+    desc: "Escuta sem pressa com respeito à sua história.",
   },
   {
     icon: ShieldCheck,
@@ -28,6 +28,7 @@ export default function Projeto() {
   return (
     <section
       id="projeto"
+      tabIndex={-1}
       className="relative isolate overflow-hidden bg-cream-deep dark:bg-dark-surface py-22"
     >
       {/* Decoração responsiva */}
@@ -57,7 +58,7 @@ export default function Projeto() {
             O Projeto
           </div>
 
-          <h2 className="font-serif font-normal text-[clamp(1.7rem,3.2vw,2.5rem)] leading-tight tracking-tight mx-auto">
+          <h2 className="font-serif font-normal text-[clamp(1.7rem,calc(3.2vw*var(--font-scale)),2.5rem)] leading-tight tracking-tight mx-auto">
             Nasceu de uma escuta{" "}
             <em className="italic font-medium text-sage-deep dark:text-clay">
               que não podia parar.

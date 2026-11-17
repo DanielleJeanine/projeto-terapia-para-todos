@@ -4,7 +4,7 @@ const facts = ["Consulta online", "Escuta ativa", "Sigilo profissional", "Acolhi
 
 export default function Psicologa() {
   return (
-    <section id="psicologa" className="py-22">
+    <section id="psicologa" tabIndex={-1} className="py-22">
       <div className="max-w-[1080px] mx-auto px-7 py-16 grid md:grid-cols-[0.85fr_1.15fr] gap-16 items-center">
         <div
           className="aspect-[4/5] rounded-[20px] p-4 relative flex flex-col
@@ -16,7 +16,8 @@ export default function Psicologa() {
           <div className="relative flex-1 rounded-[14px] overflow-hidden">
             <Image
               src="/images/dra-luziane.jpeg"
-              alt="Luziane Rodrigues, psicóloga"
+              alt="Luziane Rodrigues, psicóloga, mulher parda, cabelo castanho claro ondulado e na altura dos ombros,
+               sorrindo para a câmera, utilizando óculos de grau redondos. Ela veste jaleco branco, está de braços cruzados e está em um ambiente interno com paredes claras e plantas ao fundo."
               fill
               sizes="(min-width: 768px) 40vw, 90vw"
               className="object-cover object-[center_30%] rounded-[14px]"
@@ -24,10 +25,9 @@ export default function Psicologa() {
             />
           </div>
 
-          {/* Legenda — dentro da moldura, abaixo da foto */}
           <div className="relative z-10 text-cream text-[0.85rem] px-2 pt-4 pb-1">
             <strong className="block font-serif text-[1.3rem] font-medium mb-1">Luziane Rodrigues</strong>
-            Psicóloga · Idealizadora do projeto <br/>
+            Psicóloga · Neuropsicóloga · Idealizadora do projeto <br/>
             CRP 05/67737
           </div>
         </div>
@@ -36,7 +36,7 @@ export default function Psicologa() {
           <div className="text-[1.25rem] uppercase tracking-wider text-clay font-medium mb-3">
             Quem está do outro lado
           </div>
-          <h2 className="font-serif font-normal text-[clamp(1.7rem,3.2vw,2.5rem)] leading-tight tracking-tight">
+          <h2 className="font-serif font-normal text-[clamp(1.7rem,calc(3.2vw*var(--font-scale)),2.5rem)] leading-tight tracking-tight">
             Uma trajetória que começou <em className="italic font-medium text-sage-deep dark:text-clay">com escuta.</em>
           </h2>
           <p className="font-serif italic text-[1.4rem] leading-snug text-sage-deep dark:text-clay my-6">

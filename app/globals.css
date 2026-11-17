@@ -5,14 +5,142 @@
 @tailwind utilities;
 
 html {
-  scroll-behavior: smooth;
+  --font-scale: 1;
+  --focus-color: #52503e;
+  --focus-inner-color: #f9f6e9;
+  scroll-padding-top: calc(var(--site-header-height, 0px) + 1rem);
+}
+
+html.dark {
+  --focus-color: #f9f6e9;
+  --focus-inner-color: #1e1d17;
 }
 
 body {
   @apply bg-cream text-ink dark:bg-dark-bg dark:text-dark-text transition-colors duration-300;
   font-family: "Work Sans", sans-serif;
+  overflow-wrap: anywhere;
 }
 
 .font-serif {
   font-family: "Fraunces", serif;
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus-color) !important;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 3px var(--focus-inner-color);
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 60;
+  top: 0.5rem;
+  left: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  background: #f9f6e9;
+  color: #2b2a22;
+  text-decoration: underline;
+}
+
+.skip-link:not(:focus) {
+  clip-path: inset(50%);
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  max-height: 80dvh;
+  overflow-y: auto;
+  box-shadow: 0 4px 18px rgb(43 42 34 / 10%);
+}
+
+.accessibility-bar {
+  background: #52503e;
+  color: #f9f6e9;
+  border-bottom: 2px solid #b98567;
+  --focus-color: #f9f6e9;
+  --focus-inner-color: #52503e;
+}
+
+.dark .accessibility-bar {
+  background: #323124;
+  border-bottom-color: #d4ab91;
+}
+
+.accessibility-button {
+  background: rgb(249 246 233 / 8%);
+  border-color: rgb(249 246 233 / 45%);
+}
+
+.accessibility-button:hover {
+  background: rgb(249 246 233 / 20%);
+}
+
+.accessibility-button[aria-pressed="true"] {
+  background: #f9f6e9;
+  border-color: #f9f6e9;
+  color: #2b2a22;
+}
+
+html[data-high-contrast] {
+  color-scheme: dark !important;
+  --focus-color: #ffeb3b;
+  --focus-inner-color: #000;
+}
+
+[data-high-contrast] body,
+[data-high-contrast] body :where(*) {
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+[data-high-contrast] body,
+[data-high-contrast] :is(.site-nav, .accessibility-bar, [class*="bg-"]) {
+  background: #000 !important;
+  box-shadow: none;
+}
+
+[data-high-contrast] .accessibility-bar {
+  border-bottom: 3px double #ffeb3b !important;
+  --focus-color: #ffeb3b;
+  --focus-inner-color: #000;
+}
+
+[data-high-contrast] a {
+  color: #ffeb3b !important;
+  text-decoration: underline;
+}
+
+[data-high-contrast] a :where(*) {
+  color: inherit !important;
+}
+
+[data-high-contrast] :is(a[class*="rounded-full"], button, .skip-link) {
+  background: #000 !important;
+  border: 2px solid #ffeb3b !important;
+}
+
+[data-high-contrast] button[aria-pressed="true"] {
+  background: #ffeb3b !important;
+  color: #000 !important;
+}
+
+[data-high-contrast] button[aria-disabled="true"] {
+  opacity: 1;
+  border-style: dashed !important;
+}
+
+[data-high-contrast] .wave-divider {
+  color: #000 !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body,
+  body * {
+    animation: none !important;
+    transition: none !important;
+  }
 }

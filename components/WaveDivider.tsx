@@ -5,7 +5,8 @@ export default function WaveDivider({ flip = false }: { flip?: boolean }) {
 
   return (
     <svg
-      className="block w-full h-16 text-cream-deep dark:text-dark-surface"
+      className="wave-divider block w-full h-16 text-cream-deep dark:text-dark-surface"
+      aria-hidden="true"
       viewBox="0 0 1080 40"
       preserveAspectRatio="none"
     >

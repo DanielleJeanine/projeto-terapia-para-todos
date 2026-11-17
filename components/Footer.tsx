@@ -17,18 +17,17 @@ export default function Footer() {
             <h4 className="text-[0.8rem] uppercase tracking-wide text-sage-deep dark:text-clay mb-3">Institucional</h4>
             <a href="#projeto" className="block text-[0.9rem] mb-2 text-[#5a5847] dark:text-[#b5b19f]">Sobre o projeto</a>
             <a href="#psicologa" className="block text-[0.9rem] mb-2 text-[#5a5847] dark:text-[#b5b19f]">A psicóloga</a>
-            <a href="#faq" className="block text-[0.9rem] mb-2 text-[#5a5847] dark:text-[#b5b19f]">FAQ</a>
           </div>
 
           <div>
             <h4 className="text-[0.8rem] uppercase tracking-wide text-sage-deep dark:text-clay mb-3">Contato</h4>
-            <a href="#" className="block text-[0.9rem] mb-2 text-[#5a5847] dark:text-[#b5b19f]">WhatsApp</a>
-            <a href="#" className="block text-[0.9rem] mb-2 text-[#5a5847] dark:text-[#b5b19f]">contato@terapiaparatodos.com</a>
+            <a href="https://wa.me/5524992667998" className="block text-[0.9rem] mb-2 text-[#5a5847] dark:text-[#b5b19f]">WhatsApp</a>
+           {/* <a href="mailto:contato@terapiaparatodos.com" className="block break-all text-[0.9rem] mb-2 text-[#5a5847] dark:text-[#b5b19f]">contato@terapiaparatodos.com</a> */}
           </div>
         </div>
 
         <div className="mt-10 text-[0.8rem] text-[#a09d88] text-center">
-          © 2026 Terapia para Todos · Luziane Rodrigues · CRP xx/xxxxx
+          © 2026 Terapia para Todos · Luziane Rodrigues · CRP 05/67737
         </div>
       </div>
     </footer>

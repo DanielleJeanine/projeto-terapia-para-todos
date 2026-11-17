@@ -2,7 +2,7 @@ import { Leaf } from "./Leaf";
 
 export default function Hero() {
   return (
-    <header className="relative isolate overflow-hidden pt-24 pb-20 md:pb-10">
+    <header id="inicio" tabIndex={-1} className="relative isolate overflow-hidden pt-24 pb-20 md:pb-10">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 z-0"
@@ -30,7 +30,7 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 max-w-[1080px] mx-auto px-7 flex flex-col items-center text-center">
-        <h1 className="font-serif font-normal leading-[1.08] tracking-tight text-[clamp(2.4rem,5.2vw,4rem)] max-w-[820px]">
+        <h1 className="font-serif font-normal leading-[1.08] tracking-tight text-[clamp(2.4rem,calc(5.2vw*var(--font-scale)),4rem)] max-w-[820px]">
           Toda pessoa merece um espaço seguro para cuidar da própria{" "}
           <em className="italic font-medium text-sage dark:text-clay">
             saúde mental
@@ -43,9 +43,8 @@ export default function Hero() {
           <em className="italic font-semibold text-sage-deep dark:text-clay">
             Terapia para Todos
           </em>{" "}
-          oferece atendimento psicológico com valores sociais, tornando a
-          psicoterapia mais acessível, acolhedora e inclusiva para quem
-          precisa de apoio emocional.
+          oferece atendimento psicológico e avaliação neuropsicológica
+          de modo acolhedor e inclusivo, tornando esses procedimentos acessíveis a todos.
         </p>
       </div>
     </header>
